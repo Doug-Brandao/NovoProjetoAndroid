@@ -2,17 +2,20 @@ package com.example.novoprojeto;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.google.android.material.snackbar.Snackbar;
 
 public class FormCadastro extends AppCompatActivity {
 
     private EditText edit_nome,edit_email,edit_senha;
+    private TextView text_jatenho;
     private Button bt_cadastrar;
     String[] mensagens = {"Preenchar todos os campos","Cadastro realizado com sucesso"};
 
@@ -41,13 +44,20 @@ public class FormCadastro extends AppCompatActivity {
                 }
             }
         });
+        text_jatenho.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FormCadastro.this,FormLogin.class);
+                startActivity(intent);
+            }
+        });
     }
     private void CadastrarUsuario(){
         String email = edit_email.getText().toString();
         String senha = edit_senha.getText().toString();
     }
     private void IniciarComponentes(){
-
+        text_jatenho = findViewById(R.id.title_jatenho);
         edit_nome = findViewById(R.id.edit_nome);
         edit_email = findViewById(R.id.edit_email);
         edit_senha = findViewById(R.id.edit_senha);

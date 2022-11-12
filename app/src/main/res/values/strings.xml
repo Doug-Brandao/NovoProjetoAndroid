@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Novo Projeto</string>
     <string name="entrar">Entrar</string>
-    <string name="text_cadastro">Crie uma conta clicando aqui</string>
-    <string name="title_cadastro">Cadastre-se</string>
+    <string name="text_cadastro">Ainda não possui uma conta? Crie agora.</string>
+    <string name="title_cadastro">Crie sua nova conta.</string>
+    <string name="title_lista">Lista de Compras</string>
+    <string name="title_conta">Acesse sua conta.</string>
+    <string name="tile_tenho_conta">Já tenho uma conta.</string>
+    <string name="text_pesquisa"></string>
 </resources>
